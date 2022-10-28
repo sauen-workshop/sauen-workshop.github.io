@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html style="background-image: black;">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title> SPOOKY VIDEO WORKSHOP </title>
+	    <link rel="stylesheet" type="text/css" href="style.css ">
+	</head>
+
+	<body style="background-color: black;">
+
+		<div class="wrapper">
+			<div class="flex-container">
+				<video width="95%" height="95%" autoplay loop muted playsinline id="myVideo">
+					<source src="https://archive.org/download/v-p-ganja-and-hess/V_P_Ganja%20and%20Hess_.mp4" type="video/mp4">
+				</video>
+				<button onclick="toggleMute();" class="button1">
+				🎵 on / off
+				</button>
+			</div>
+		</div>
+
+		<script type="text/javascript">		
+			function toggleMute() {
+				var video=document.getElementById("myVideo")
+				if(video.muted) {
+					video.muted = false;
+				} else {
+					video.muted = true;
+				}
+			}			
+		</script>
+
+	</body>
+
+</html>
